@@ -1,29 +1,32 @@
 # Mini Message Board
 
-A simple message board built with Node.js, Express, and EJS. Users can view messages, add new ones through a form, and open individual message pages. This project was created to practice Express routing, form handling, and server-side rendering.
+A simple message board built with Node.js, Express, and EJS. Users can view
+messages, add new ones through a form, and open individual message pages. This
+project was created to practice Express routing, form handling, and server-side
+rendering.
 
 ---
 
 ## Preview
 
-<img width="1920" height="1243" alt="1" src="https://github.com/user-attachments/assets/b8bda33e-ea7a-4478-9d07-6a9760f4f852" />
+<img width="1920" height="1243" alt="1" src="./public/Screenshot 2026-01-21 224435" />
 
-<img width="1920" height="1243" alt="2" src="https://github.com/user-attachments/assets/4420d8d7-41e8-4c5a-a350-5a5eb7da13c4" />
+<img width="1920" height="1243" alt="2" src="./public/Screenshot 2026-01-21 224445" />
 
-<img width="1920" height="1243" alt="3" src="https://github.com/user-attachments/assets/646dbf28-0407-44d0-b519-c0c7fcbc4079" />
+<img width="1920" height="1243" alt="3" src="./public/Screenshot 2026-01-21 224523" />
 
 ---
 
 ## Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| **Node.js** | JavaScript runtime |
-| **Express.js 5** | Web framework |
-| **EJS** | Templating engine |
-| **Neon** | Serverless Postgres hosting |
-| **@neondatabase/serverless** | Neon's serverless driver |
-| **Render / Vercel** | Deployment |
+| Technology                   | Purpose                     |
+| ---------------------------- | --------------------------- |
+| **Node.js**                  | JavaScript runtime          |
+| **Express.js 5**             | Web framework               |
+| **EJS**                      | Templating engine           |
+| **Neon**                     | Serverless Postgres hosting |
+| **@neondatabase/serverless** | Neon's serverless driver    |
+| **Render / Vercel**          | Deployment                  |
 
 ---
 
@@ -73,26 +76,30 @@ mini-msg-board/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone git@github.com:Zahooruddin-dev/simple-msg-board.git
    cd mini-msg-board
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
-   
+
    Create a `.env` file in the root directory:
+
    ```env
    DATABASE_URL=postgresql://username:password@your-neon-host/database?sslmode=require
    ```
 
 4. **Create the database table**
-   
+
    Run this SQL in your Neon console:
+
    ```sql
    CREATE TABLE messages (
        id SERIAL PRIMARY KEY,
@@ -103,6 +110,7 @@ mini-msg-board/
    ```
 
 5. **Start the server**
+
    ```bash
    node app.js
    ```
@@ -119,12 +127,12 @@ mini-msg-board/
 Through building this project, I learned:
 
 - **EJS Templating** - Dynamic HTML rendering with embedded JavaScript
-- **Neon Serverless** - Using Neon's serverless driver for edge-compatible database connections
-- **MVC Architecture** - Separating concerns with routes, views, and database logic
+- **Neon Serverless** - Using Neon's serverless driver for edge-compatible
+  database connections
+- **MVC Architecture** - Separating concerns with routes, views, and database
+  logic
 
 ---
-
-
 
 ## Contributing
 
