@@ -1,0 +1,2 @@
+# Mark CSS as vendored so it doesn't count toward language stats
+*.css linguist-vendored
